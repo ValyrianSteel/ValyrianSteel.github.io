@@ -1,7 +1,68 @@
 # Site settings
-title: ValyrianSteel Blog
-description: ValyrianSteel-Blog A Elegant by Jekyll
-keywords: Modern, Blogging, Fun
+title: ValyrianSteel
+header-img: "img/facebook.jpg"
+tagline: "cn" 
+description: ValyrianSteel'space
+keywords: a
 author: Valyrian & Wferr
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://ValyrianSteel.github.io" # the base hostname & protocol for your site
+
+
+
+# About/contact
+owner: 
+  name: " Valyrian"
+  email: mcm376@gmail.com
+  bio: "全"
+
+# Data
+gavatar: http://
+favicon: img/favicon.png
+
+douban_username:  
+twitter_username: 
+github_username: ValyrianSteel
+facebook_username: 
+weibo_username:  
+zhihu_username: Valyrian
+
+# Build settings  
+# use Github Flavored Markdown !important  
+# document: http://jekyllrb.com/docs/configuration/#kramdown  
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+relative_permalinks: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Defaults for posts
+defaults:
+  -
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Valyrian"
+      header-img: "img/facebook.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : Valyrian
+  disqus :
+      short_name : Valyrian
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: 
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation
